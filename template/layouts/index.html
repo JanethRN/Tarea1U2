@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+    <!-- Ruta de los estilos CSS -->
+    <LINK REL=StyleSheet HREF="../static/css/estilos.css" TYPE="text/css" MEDIA=screen>
+    <!-- Título de la página web -->
+    <title>Form</title>
+</head>
+<!-- justificamos los elementos en el centro -->
+
+<body class="m-0 vh-100 row justify-content-center align-items-center">
+    <!-- creamos un div, un contenedor, centramos el div -->
+    <div class="container-fluid p-5 text-center ">
+        <!-- creamos otro div de nuestra primera fila centramos -->
+        <div class="row text-white text-center">
+            <!-- div que define el tamaño, el color y el borde -->
+            <div class="col-6 bg-dark border">
+                <!-- Insertamos imagen -->
+                <img src="file:///C:/Users/julis/AppData/Local/Temp/Rar$EXa140788.32855/colorlib-regform-3/images/bg-heading-03.jpg"
+                    alt="" class="rounded">
+            <!-- fin de div que define tamaño, color y borde -->
+            </div>
+            <!-- creamos otro div con tamaño 4, color negro y borde -->
+            <div class="col-4 bg-dark border">
+                <!-- creamos un formulario con metodo post-->
+                <form id="basic-form" action="" method="post">
+                    <!-- insertamos una etieuta para el nombre -->
+                    <label for="exampleInputName" class="form-label">Name*</label>
+                    <!-- campo para insertar el nombre-->
+                    <input type="text" class="form-control" id="exampleInputName" required>
+                    <!-- insertamos una etiqueta para el email -->
+                    <label for="exampleInputEmail1" class="form-label">Email address*</label>
+                    <!-- campo para insertar el  email-->
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                        required>
+                    <!-- insertamos una etiqueta para el mensaje -->
+                    <label for="validationTextarea">Message*</label>
+                     <!-- textarea para insertar el  mensaje-->
+                    <textarea class="form-control is-invalid" id="validationTextarea" required></textarea>
+                    
+                    <div class="invalid-feedback">
+                         <!-- campo de checkbox-->
+                        <input type="checkbox" class="custom-control-input" id="customCheck1" required>
+                         <!-- etiqueta para el campo de checkbox-->
+                        <label class="custom-control-label text-white" for="customCheck1">Send me a copy of this
+                            message</label>
+                             <!--div para el captcha -->
+                        <div id="captchaBackground">
+                             <!-- lienzo-->
+                            <canvas id="captcha">captcha text</canvas>
+                             <!-- campo para insertar datos del captchat-->
+                            <input id="textBox" type="text" name="text">
+                             <!-- div con id boton-->
+                            <div id="buttons">
+                                 <!-- boton de subir datos-->
+                                <input id="submitButton" type="submit">
+                                 <!--boton de refrescar -->
+                                <button id="refreshButton" type="submit">Refresh</button>
+                            </div>
+                            <span id="output"></span>
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+     <!--links para usar jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script>
+
+</body>
+ <!-- referenciamos a nuestro js-->
+<script src="../static/js/funciones.js"></script>
+
+</html>
