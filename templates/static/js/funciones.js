@@ -2,7 +2,7 @@
 let captchaText = document.querySelector('#captcha');
 var ctx = captchaText.getContext("2d");
 ctx.font = "30px Roboto";
-ctx.fillStyle = "#08e5ff";
+ctx.fillStyle = "#be99cf";
 
 let userText = document.querySelector('#textBox');
 let submitButton = document.querySelector('#submitButton');
@@ -60,3 +60,8 @@ refreshButton.addEventListener('click', function() {
  ctx.fillText(refreshArr.join(''),captchaText.width/4, captchaText.height/2);
  output.innerHTML = "";
 });
+if(verificar)
+{
+  alert("Se ha enviado el formulario");
+ document.contacto_frm.submit();
+}

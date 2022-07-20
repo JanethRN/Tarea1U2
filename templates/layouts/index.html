@@ -28,28 +28,27 @@
             </div>
             <div class="col-4 bg-dark border">
                 <form>
-                    <label for="exampleInputName" class="form-label">Name</label>
-                    <input type="text" class="form-control" id="exampleInputName">
-                    <label for="exampleInputEmail1" class="form-label">Email address</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                    <label for="validationTextarea">Message</label>
-                    <textarea class="form-control is-invalid" id="validationTextarea" placeholder="Required "
-                        required></textarea>
-                    <div class="invalid-feedback">
-                        <input type="checkbox" class="custom-control-input" id="customCheck1">
-                        <label class="custom-control-label text-white" for="customCheck1">Send me a copy of this message</label>
+                    <label for="exampleInputName" class="form-label">Name*</label>
+                    <input type="text" class="form-control" id="exampleInputName" required>
+                    <label for="exampleInputEmail1" class="form-label">Email address*</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+                    <label for="validationTextarea">Message*</label>
+    <textarea class="form-control is-invalid" id="validationTextarea"  required></textarea>
+    <div class="invalid-feedback">
+        <input type="checkbox" class="custom-control-input" id="customCheck1" required>
+        <label class="custom-control-label text-white" for="customCheck1">Send me a copy of this message</label>
 
-                        <div id="captchaBackground">
-                            <canvas id="captcha">captcha text</canvas>
-                            <input id="textBox" type="text" name="text">
-                            <div id="buttons">
-                                <input id="submitButton" type="submit">
-                                <button id="refreshButton" type="submit">Refresh</button>
-                            </div>
-                            <span id="output"></span>
-                        </div>
-                    </div>
-
+        <div id="captchaBackground">
+            <canvas id="captcha">captcha text</canvas>
+            <input id="textBox" type="text" name="text">
+            <div id="buttons">
+            <input id="submitButton" type="submit">
+            <button id="refreshButton" type="submit">Refresh</button>
+            </div>
+            <span id="output"></span>
+            </div>
+            </div>
+            
                 </form>
             </div>
         </div>
