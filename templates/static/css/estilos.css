@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 .container {
   width: 990px;
   height: 10px;
@@ -7,3 +8,22 @@ img{
   height: 500px;
   width: 500px;
 }
+
+ #submitButton {
+  margin-top: 2em;
+  margin-bottom: 2em;
+  background-color: #be99cf;
+  border: 0px;
+  font-weight: bold;
+ }
+ #refreshButton {
+  background-color: #be99cf;
+  border: 0px;
+  font-weight: bold;
+ }
+ .incorrectCaptcha {
+  color: #FF0000;
+ }
+ .correctCaptcha {
+  color: #7FFF00;
+ }

@@ -33,22 +33,28 @@
                     <label for="exampleInputEmail1" class="form-label">Email address</label>
                     <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
                     <label for="validationTextarea">Message</label>
-    <textarea class="form-control is-invalid" id="validationTextarea" placeholder="Required " required></textarea>
-    <div class="invalid-feedback">
-        <input type="checkbox" class="custom-control-input" id="customCheck1">
-        <label class="custom-control-label" for="customCheck1">Send me a copy of this message</label>
+                    <textarea class="form-control is-invalid" id="validationTextarea" placeholder="Required "
+                        required></textarea>
+                    <div class="invalid-feedback">
+                        <input type="checkbox" class="custom-control-input" id="customCheck1">
+                        <label class="custom-control-label text-white" for="customCheck1">Send me a copy of this message</label>
 
-        <div class="row" style="margin-bottom:30px;">
-            <div class="col-sm-5">
-                <img src="../layouts/captcha.php" id="captcha_image"/>
-                <br/>
-                <a id="captcha_reload" href="#">reload</a> 
-            </div>
+                        <div id="captchaBackground">
+                            <canvas id="captcha">captcha text</canvas>
+                            <input id="textBox" type="text" name="text">
+                            <div id="buttons">
+                                <input id="submitButton" type="submit">
+                                <button id="refreshButton" type="submit">Refresh</button>
+                            </div>
+                            <span id="output"></span>
+                        </div>
+                    </div>
+
                 </form>
             </div>
         </div>
     </div>
 </body>
+<script src="../static/js/funciones.js"></script>
 
 </html>
-<html>
